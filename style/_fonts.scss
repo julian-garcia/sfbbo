@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'heading-font';
+  src: url('../fonts/JosefinSans.woff2') format('woff2'),
+       url('../fonts/JosefinSans.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'copy-font';
+  src: url('../fonts/Muli-Medium.woff2') format('woff2'),
+       url('../fonts/Muli-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'copy-font';
+  src: url('../fonts/Muli-ExtraBold.woff2') format('woff2'),
+       url('../fonts/Muli-ExtraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'copy-font';
+  src: url('../fonts/Muli-MediumItalic.woff2') format('woff2'),
+       url('../fonts/Muli-MediumItalic.woff') format('woff');
+  font-style: italic;
+}

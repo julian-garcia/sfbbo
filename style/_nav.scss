@@ -1,0 +1,32 @@
+.nav-menu {
+  display: none;
+
+  @media (min-width: $tablet-portrait) {
+    display: block;
+    width: 80vw;
+
+    &__items {
+      position: relative;
+      display: flex;
+      list-style: none;
+      justify-content: space-around;
+      text-align: center;
+      padding: 0;
+      z-index: 2;
+
+      & > li {
+        font-family: 'heading-font';
+        padding: 1rem;
+        a { text-decoration: none; color: black; }
+      }
+    }  
+  }
+  
+  @media (min-width: $tablet-landscape) {
+    width: 100%;
+  }
+}
+
+.current_page_item {
+  font-weight: bold;
+}

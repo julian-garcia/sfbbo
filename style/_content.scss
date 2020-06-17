@@ -1,0 +1,87 @@
+p, span, a, .copy-font {
+  font-family: 'copy-font';
+}
+
+h1, h2, .heading-font, button, .button {
+  font-family: 'heading-font';
+}
+
+a { text-decoration: none; }
+
+.headline {
+  min-width: 320px;
+  max-width: 80vw;
+}
+
+.page-content {
+  margin: 2rem 2rem;
+}
+
+.white {
+  color: white;
+}
+
+.block-type-1 {
+  min-height: 300px;
+  background: linear-gradient(180deg, 
+                              rgba($primary-colour1, .6) 88.41%, 
+                              transparent 100%);
+  border-left: 10px solid $primary-colour2;
+  position: relative;
+
+  @media (min-width: $tablet-portrait) {
+    min-height: 400px;
+  }
+
+  @media (min-width: $tablet-landscape) {
+    min-height: 700px;
+  }
+}
+
+.background-image {
+  position: relative;
+  min-height: 300px;
+  &:before {
+    content: '';
+    background: rgba($primary-colour3, .9);
+    position: absolute;
+    left: 0; 
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.centered-content {
+  position: relative;
+
+  & > * {
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    transform: translateY(-50%);
+
+    @media (min-width: $tablet-landscape) {
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+}
+
+.button {
+  text-transform: uppercase;
+  border: none;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  padding: 10px 10px 5px;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 3px;
+
+  &.primary {
+    color: white;
+    background: $primary-colour2;
+  }
+}
