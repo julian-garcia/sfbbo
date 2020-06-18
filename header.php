@@ -9,14 +9,14 @@
   <?php wp_head(); ?>
 </head>
 <body>
-  <div class="auto-columns">
+  <div class="auto-columns header">
     <div class="block-type-1">
       <nav class="nav-menu">
         <?php wp_nav_menu(array('theme_location' => 'header-menu', 'container' => '', 'menu_class' => 'nav-menu__items')); ?>
       </nav>
       <div class="header-image"></div>
     </div>
-    <div class="centered-content background-image" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/beach.png');">
+    <div class="centered-content background-image overlay" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/beach.png');">
       <a href="/" class="logo">
         <img src="<?php echo get_bloginfo('template_directory'); ?>/images/logo.png" alt="" class="logo-image">
       </a>

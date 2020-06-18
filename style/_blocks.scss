@@ -1,0 +1,33 @@
+.block-type-1 {
+  min-height: 300px;
+  background: linear-gradient(180deg, 
+                              rgba($primary-colour1, .6) 88.41%, 
+                              transparent 100%);
+  border-left: 10px solid $primary-colour2;
+  position: relative;
+
+  @media (min-width: $tablet-portrait) {
+    min-height: 400px;
+  }
+
+  @media (min-width: $tablet-landscape) {
+    min-height: 700px;
+  }
+}
+
+.text-block {
+  max-width: 100%;
+  padding: 1rem 1rem 2rem;
+  z-index: 2;
+
+  p {
+    margin: 1rem 0;
+  }
+
+  &.small {
+    max-width: 100%;
+    @media (min-width: $tablet-portrait) { max-width: 400px; }
+  }
+
+  @media (min-width: $tablet-portrait) { max-width: 500px; }
+}

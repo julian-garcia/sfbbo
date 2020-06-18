@@ -16,8 +16,12 @@
 
       & > li {
         font-family: 'heading-font';
+        font-size: 1.2rem;
         padding: 1rem;
-        a { text-decoration: none; color: black; }
+        a { 
+          text-decoration: none; 
+          color: black; 
+        }
       }
     }  
   }
