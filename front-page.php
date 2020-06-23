@@ -36,4 +36,32 @@
     <div></div>
   </div>
 </div>
+<div class="auto-columns up half full-width">
+  <div></div>
+  <div class="text-block blue-shaded-bg no-max">
+    <div style="margin: 90px auto; max-width: 400px;">
+      <h2 class="page-heading">Bird Photo Big Day Winners</h2>
+      <p>Photo contest in Support of SFBBO, ​170 species photographed in 24 hours.</p>
+      <h3>Winners of:</h3>
+      <h4 style="margin:0 0 10px">Best Bird in Flight</h4>
+      <h4 style="margin:0 0 10px">Best Bird Eating</h4>
+      <h4 style="margin:0 0 10px">Best Bird Photo Taken in a Backyard</h4>
+      <h4 style="margin:0 0 10px">Funniest Photo of a Bird</h4>
+    </div>
+  </div>
+</div>
+<div class="photo-slider auto-columns full-width up half">
+  <div class="slide left background-image" style="background: linear-gradient(180deg, #ededed 10%, transparent 100%), url('<?php echo get_bloginfo('template_directory'); ?>/images/birdwatch.png'); background-size: cover; background-position-y: bottom;">
+    <div class="photo-image" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/support.png');">
+      <h3 class="photo-title">Best Bird in Flight</h3>
+      <h4 class="photo-author">Red-shouldered Hawk Peter Shen</h4>
+    </div>
+  </div>
+  <div class="slide right blue-bg">
+    <div class="photo-image" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/support.png');">
+      <h3 class="photo-title">Best Bird Photo that Tells A Story</h3>
+      <h4 class="photo-author">Snowy Egrets Ron Dell'Aquila</h4>
+    </div>
+  </div>
+</div>
 <?php get_footer(); ?>

@@ -1,8 +1,9 @@
-p, span, a, .copy-font {
+p, span, a, .copy-font, input, textarea {
   font-family: 'copy-font';
 }
 
-h1, h2, h3, h4, h5, h6, .heading-font, button, .button {
+h1, h2, h3, h4, h5, h6, 
+.heading-font, button, .button, label {
   font-family: 'heading-font';
 }
 
@@ -11,13 +12,18 @@ a { text-decoration: none; }
 body { background: $body-colour; }
 
 .headline {
-  min-width: 320px;
+  min-width: unset;
   max-width: 80vw;
+
+  @media (min-width: $tablet-portrait) {
+    min-width: 320px;
+    max-width: 600px;
+  }
 }
 
 .page-content {
   position: relative;
-  margin: 2rem 2rem;
+  margin: 2rem 2rem 0;
 }
 
 .page-heading {
@@ -27,12 +33,15 @@ body { background: $body-colour; }
 
 .white { color: white; }
 .white-bg { background: rgba(white,.85); }
+.blue-shaded-bg { background: linear-gradient(180deg, transparent 0%, $primary-colour1 40%); }
+.blue-bg { background: $primary-colour1; }
 
 .background-image {
   position: relative;
-  min-height: 300px;
+  min-height: 230px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 
   &.overlay:before {
     content: '';
@@ -46,6 +55,10 @@ body { background: $body-colour; }
 
   &.light:before {
     background: linear-gradient(180deg, white 0%, transparent 100%)
+  }
+  
+  @media (min-width: $tablet-portrait) {
+    min-height: 300px;
   }
 }
 
@@ -104,8 +117,8 @@ body { background: $body-colour; }
 }
 
 .up {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
 
   @media (min-width: $tablet-landscape) {
     margin-top: -250px;

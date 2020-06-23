@@ -1,0 +1,67 @@
+.footer {
+  background: linear-gradient(180deg, rgba($primary-colour3, 0.7) 60%, transparent 100%), 
+              url('../images/footer.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0;
+  padding: 2rem;
+  align-items: flex-end;
+
+  .privacy, .copywrite { text-align: center;}
+
+  @media (min-width: $tablet-portrait) {
+    height: 300px;
+    margin-top: -100px;
+    .copywrite { text-align: left;}
+    .privacy { text-align: right;}
+  }
+}
+
+.contact-us {
+  position: relative;
+  padding: 1rem 2rem 2rem;
+  margin: 0 0 1rem;
+  background: rgba($accent-colour, .9);
+  z-index: 4;
+  max-width: 90vw;
+
+  &-text {
+    display: block;
+  }
+
+  & > * {
+    margin-bottom: 1rem;
+  }
+
+  & form {
+    margin: 0 auto;
+    width: 300px;
+    display: block;
+    max-width: 60vw;
+
+    textarea {
+      width: 100%;
+      height: 6rem;
+      resize: none;
+      border: none;
+      margin: .5rem 0;
+    }
+
+    input {
+      width: 70%;
+      height: 40px;
+      border: none;
+      border-bottom: 4px solid $primary-colour2;
+    }
+
+    button {
+      width: 30%;
+      float: right;
+    }
+  }
+
+  @media (min-width: $tablet-portrait) {
+    max-width: 500px;
+    margin: -150px -60px 1rem 60px;
+  }
+}
